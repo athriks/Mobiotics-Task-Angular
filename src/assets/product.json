@@ -1,0 +1,78 @@
+{
+    "products" :[
+        {
+            "BrandName":"Fusion 1",
+            "ProductName" : "Motorola Moto",
+            "Quantity" :"1",
+            "Price" : "15000",
+            "MRP" : "17000",
+            "img" :"./assets/MotorolaMoto.jpg",
+            "OfferText" :"5%"
+        },
+        {
+            "BrandName":"Realme X3",
+            "ProductName" : "Realme",
+            "Quantity" :"1",
+            "Price" : "12000",
+            "MRP" : "11000",
+            "img" :"./assets/Realme.jpg",
+            "OfferText" :"6%"
+        },
+        {
+            "BrandName":"Desire 20",
+            "ProductName" : "HTC",
+            "Quantity" :"1",
+            "Price" : "20000",
+            "MRP" : "18000",
+            "img" :"./assets/HTC.jpg",
+            "OfferText" :"10%"
+        },
+        {
+            "BrandName":"Galaxy A21",
+            "ProductName" : "Samsung",
+            "Quantity" :"1",
+            "Price" : "25000",
+            "MRP" : "21000",
+            "img" :"./assets/Samsung.jpg",
+            "OfferText" :"8%"
+        },
+        {
+            "BrandName":"Note 9",
+            "ProductName" : "Redmi",
+            "Quantity" :"1",
+            "Price" : "13000",
+            "MRP" : "12000",
+            "img" :"./assets/Redmi.jpg",
+            "OfferText" :"5%"
+        },
+        {
+            "BrandName":"Oppo A11K",
+            "ProductName" : "One Plus",
+            "Quantity" :"1",
+            "Price" : "135000",
+            "MRP" : "27000",
+            "img" :"./assets/MotorolaMoto.jpg",
+            "OfferText" :"13%"
+        },
+       
+        {
+            "BrandName":"Sony Bravia",
+            "ProductName" : "Sony",
+            "Quantity" :"1",
+            "Price" : "55000",
+            "MRP" : "47000",
+            "img" :"./assets/TvSony.jpg",
+            "OfferText" :"15%"
+        },
+        {
+            "BrandName":"Samsung 55 inch ",
+            "ProductName" : "Samsung",
+            "Quantity" :"1",
+            "Price" : "35000",
+            "MRP" : "33000",
+            "img" :"./assets/TvSam.jpg",
+            "OfferText" :"8%"
+        }
+       
+    ]
+}

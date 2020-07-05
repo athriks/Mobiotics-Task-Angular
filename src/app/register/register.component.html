@@ -1,0 +1,46 @@
+
+<div fxLayout="row" fxLayoutAlign="center center" class="login-main">
+    <mat-card >
+    <mat-card-header fxLayoutAlign="center">
+      <mat-card-title >Registration Page</mat-card-title>
+    </mat-card-header>
+    <form [formGroup]="regform"></form>
+    <mat-card-content fxLayout="column">
+       
+        <form [formGroup]="regform"  >
+            <mat-form-field fxLayoutAlign="center" >
+              <input   matInput placeholder=" UserName"  formControlName="UserName" type ="text" [(ngModel)]="user.UserName" name="UserName" required>
+            </mat-form-field> 
+              <div fxLayoutAlign="center" *ngIf="regform.get('UserName').touched&& !regform.get('UserName').value" >UserName can't be empty</div>
+             <div fxLayoutAlign="center" *ngIf="regform.get('UserName').invalid&& regform.get('UserName').value" >Should contain minimum 6 letters</div>
+            <br>
+            <mat-form-field fxLayoutAlign="center" >
+              <input  matInput placeholder=" Email" type ="text"  formControlName="Email" [(ngModel)]="user.Email" name="Email" (blur)="verify()" required >&nbsp;&nbsp;&nbsp;
+             </mat-form-field>
+             <div fxLayoutAlign="center" *ngIf="regform.get('Email').touched&& !regform.get('Email').value" >Email can't be empty</div>
+             <div fxLayoutAlign="center" *ngIf="regform.get('Email').invalid&& regform.get('Email').value" >Should contain minimum 6 letters</div>
+                  <br>
+             <mat-form-field fxLayoutAlign="center" >
+              <input type ="number" class="glyphicon glyphicon-user" matInput placeholder=" Mobile Number"  formControlName="MobileNumber"[(ngModel)]="user.MobileNumber" name="MobileNumber" required>
+              </mat-form-field>
+            <div fxLayoutAlign="center" *ngIf="regform.get('MobileNumber').touched&& !regform.get('MobileNumber').value" >Email can't be empty</div>
+             <div fxLayoutAlign="center" *ngIf="regform.get('MobileNumber').invalid&& regform.get('MobileNumber').value" >Should contain minimum 6 letters</div>
+            <br>
+            <mat-form-field fxLayoutAlign="center">
+              <input type = "password" matInput placeholder="Password"  formControlName="Password" [(ngModel)]=" user.Password" name="Password" required>
+            </mat-form-field>
+            <div fxLayoutAlign="center" *ngIf="regform.get('Password').touched&& !regform.get('Password').value" >password can't be empty</div>
+             <div fxLayoutAlign="center" *ngIf="regform.get('Password').invalid&& regform.get('Password').value" >Should contain minimum 5 letters</div><br>
+            <mat-form-field  fxLayoutAlign="center">
+              <input type ="password" matInput placeholder="confirm Password" class="form-control" formControlName="confirmPassword" [(ngModel)]="user.confirmPassword" name="confirmPassword" required>
+          </mat-form-field>
+        </form>
+
+
+    </mat-card-content>
+    <mat-card-actions align="center">
+        <button type ="button"  mat-flat-button color="primary" [disabled]="regform.invalid"(click)="Signup()">Register</button>
+    </mat-card-actions>
+    </mat-card>
+    </div>
+<router-outlet></router-outlet>

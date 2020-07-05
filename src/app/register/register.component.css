@@ -1,0 +1,18 @@
+.login-main{
+    margin-top: 10%;
+    }
+    mat-card{
+    min-width: 40%;
+    background-color: #ffffff;
+    }   
+
+    button{
+        color: blue;
+    }
+    input{
+        color: blue;
+    }
+
+    mat-card-title{
+        color: blue;
+    }
